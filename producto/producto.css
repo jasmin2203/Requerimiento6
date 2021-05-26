@@ -1,0 +1,13 @@
+main {
+    grid-area: main;
+    width: 985px;
+    height: 690px;
+    background-color:lightblue;
+    font-family: "Courier New, Courier monospace";
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 140px;
+    border:2px black solid;
+
+  
+  }

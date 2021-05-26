@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="producto.css">
+</html>
+<body>
+    <main>
+        <form class = "datos"action="empleado" method="POST">
+            <br>
+            </br>
+            <fieldset>
+                <legend><h4>Agregar producto</h4></legend>
+                <br>
+            <label for="codigo">Codigo* </label>
+            <input type="tel" id="codigo" maxlength="6" placeholder="" pattern="[0-9]{6}" title="Debe ingrsar solo 6 números" required>
+            <button type="submit" value="enviar">Validar</button>
+            <br/>
+            <br>
+            <label for="nombre">Nombre* </label>
+            <input type="text" id="nombre" maxlength="100" placeholder="Solo letras y numeros" pattern="[A-Za-z0-9]{100}" required> </text>
+            </br>
+            <br>
+            <label for="abreviatura"> Abreviatura
+            </label>
+            <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[A-Za-z]{10}">
+            <br>
+            <br>
+            <label for="categoria"> Categoria*
+            </label>
+            <select id="productos">
+                <option >Lácteos</option>
+                <option >Panes especiales</option>
+                <option >Pasteles</option>
+                <option >Lista cerrada de elementos</option>
+            </select>
+            </br>
+            <br>
+            <label for="ruc"> RUC Proveedor*
+            </label>
+            <input type="tel" id="ruc" maxlength="11"placeholder="Solo numeros" pattern="[0-9]{11}" required>
+            <br>
+            <br>
+            <label for="precio"> Precio*
+            </label>
+            <input type="number" id="precio" placeholder="" step="0.05"required>
+                </br>
+                <br>
+                <label for="micolor">Color de etiqueta:</label>
+            <input type="color" name="micolor" id="micolor"/>
+            </br>
+            <br>
+            <label for="fecha_nacimiento">Fecha</label>
+            <input type="datetime-local" id="fecha_nacimiento">
+            </datalist>
+            <br>
+            <br>
+            <label for="Estado">Estado*</label>
+                <input type="radio" id="Activo" name="Estado">
+                <label for="Activo">Activo</label>
+                <input type="radio" id="Activo" name="Estado">
+                <label for="Suspendido">Suspendido</label>
+                <input type="radio" id="Activo" name="Estado">
+                <label for="De baja">De baja</label>       
+            </br>      
+            <br/>
+                <label for="Afecto"> Afecto a impuesto* </label>
+                <input type="checkbox" id="Afecto" name="Afecto" >  
+            <br/>
+            <br>
+            <label for="biografia" > Descripcion </label>
+                <label><textarea id="biografia"cols="110" rows="5" style="resize: both;" ></textarea></label>
+            <br>
+        </br>
+            <div class="botonfinal">
+                <button type="submit"  value="enviar">Grabar</button>
+            <button type="submit" value="limpiar">Limpiar</button>
+            </div>
+                 </fieldset>
+        </form>
+    </main>
+    <script type="module" src="producto.js"></script>
+</body>
